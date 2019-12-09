@@ -1,0 +1,66 @@
+h1 {
+  color: silver;
+  border-style: double;
+  border-width: 5px;
+  border-color: red;
+  text-decoration: underline;
+}
+h2 {
+  color: #ffffff;
+  border-style: groove;
+  border-width: 3px;
+  border-color: lime;
+}
+h3{
+  color: #DC143C;
+  border-style: outset;
+  border-width: 1px;
+}
+h4 {
+  color: rgb(255, 100, 100);
+  border-style: inset;
+  border-width: 1px;
+  border-color: hsl(4, 30%, 60%);
+}
+p {
+  color: red;
+  margin: 20px;
+  background-color: black;
+}
+body {
+  background-color: rgb(0,0,0);
+  color: white;
+}
+.important {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.important:hover {
+  background-color:pink;
+}
+p.important {
+  width: 75%;
+}
+a {
+  background-color: white;
+  color: royalblue;
+  padding: .2rem;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  background-color: yellow;
+}
+img {
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  width:70%;
+}
+ul.a {
+  list-style-type: square;
+}
+li {
+  padding: 5px;
+}
