@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kitties To Go</title>
+    <style>
+    /*HTML 100 Lesson 4 Assignment 2
+    Use position, float or flexbox
+    There's some padding
+    Background is white, text is dark grey, links are light
+    For font, try san serif
+    Headings size is maybe 2 rem*/
+    a {
+      background-color: white;
+      color: royalblue;
+      padding: .2rem;
+    }
+    .content-box {
+            height: 5em;
+            width: 5em;
+            padding: 4em;
+            border: 1em solid;
+            margin: 1em;
+    }
+    #border-box {
+            box-sizing: border-box;
+    }
+    .content-box {
+      float: right;
+    }
+    .clearfix::after {
+      content:"";
+      display: block;
+      clear: both;
+    }
+    #border-box {
+      overflow: scroll;
+    }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <section>
+      <h3>
+        <p>Chew iPad power cord why must they do that,
+          grab pompom on mouth and put in water dish.</p>
+        <a>Find out more>></a>
+      </h3>
+      </section>
+      <section>
+      <h3>
+        <p></p>
+        <figure>
+          <img>
+          <figcaption></figcaption>
+        </figure>
+        <a></a>
+      </h3>
+      </section>
+    </aside>
+    <article>
+
+      <header>
+        <h1>Headline</h1>
+      </header>
+
+      <section class="clearfix">
+
+        <h1>A section</h1>
+        <article class="content-box">
+          <a href="#link">A Link</a>
+          <p>A paragraph</p>
+        </article>
+
+        <article class="content-box" id="border-box">
+          <a href="#link">A Link</a>
+          <p>A paragraph</p>
+        </article>
+
+        <article class="content-box">
+          <a href="#link">A Link</a>
+          <p>A paragraph</p>
+        </article>
+
+      </section>
+
+      <footer>
+        <p>This is a footer</p>
+      </footer>
+
+    </article>
+  </body>
+</html>
