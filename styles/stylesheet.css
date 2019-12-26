@@ -21,6 +21,7 @@ h4 {
   border-style: inset;
   border-width: 1px;
   border-color: hsl(4, 30%, 60%);
+  font-family: 'Lobster', cursive;
 }
 p {
   color: red;
@@ -40,6 +41,10 @@ body {
 }
 p.important {
   width: 75%;
+  font-family: 'Permanent Marker', cursive;
+}
+.righteous {
+  font-family: 'Righteous', cursive;
 }
 a {
   background-color: white;
@@ -63,4 +68,16 @@ ul.a {
 }
 li {
   padding: 5px;
+}
+.box {
+  height: 10rem;
+  width: 90%;
+  background: black;
+}
+.container {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
