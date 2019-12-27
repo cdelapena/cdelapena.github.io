@@ -23,6 +23,9 @@ h4 {
   border-color: hsl(4, 30%, 60%);
   font-family: 'Lobster', cursive;
 }
+em.underline {
+  text-decoration: underline;
+}
 p {
   color: red;
   margin: 20px;
@@ -68,6 +71,10 @@ ul.a {
 }
 li {
   padding: 5px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
 }
 .box {
   height: 10rem;
@@ -80,4 +87,27 @@ li {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+}
+li.border:hover{
+  border: 3px solid red;
+}
+li.border:hover{
+  border: 3px solid red;
+}
+li.bigtext:hover {
+  color: gold;
+  font-size: 24px;
+}
+li.background:hover {
+  background-color: silver;
+}
+li.rotate:hover {
+  transform: rotate(1080deg);
+}
+li:nth-child(odd) {
+  border: 1px solid silver;
+}
+li:nth-child(even) {
+  background-color: silver;
+  color: black;
 }
