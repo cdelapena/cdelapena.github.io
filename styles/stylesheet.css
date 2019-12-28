@@ -104,10 +104,10 @@ li.background:hover {
 li.rotate:hover {
   transform: rotate(1080deg);
 }
-li:nth-child(odd) {
+.odd:nth-child(odd) {
   border: 1px solid silver;
 }
-li:nth-child(even) {
+.even:nth-child(even) {
   background-color: silver;
   color: black;
 }
