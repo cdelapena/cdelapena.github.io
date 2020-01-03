@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <style>
+      button, input, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        box-sizing: border-box;
+        display: block;
+        margin: 0.5em;
+      }
+      input {
+        border-radius: 10px;
+      }
+      fieldset {
+        border:solid;
+      }
+      fieldset input {
+        display: inline;
+      }
+      .checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkbox label {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-top: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+      }
+      .checkbox label:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      .checkbox input:checked ~ .checkmark {
+        background-color: black;
+        border: solid white;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .checkmark:after {
+        display: block;
+      }
+      .checkbox .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1 class="righteous">Welcome to Chris Dela Pena's Website</h1>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i>Homepage</a>
+        <a href="about-me.html"><i class="far fa-smile-beam"></i>About Me</a>
+        <a href="my-projects.html"><i class="fas fa-folder-open"></i>My Projects</a>
+        <a href="contact-me.html"><i class="fas fa-envelope"></i>Contact Me</a>
+      </nav>
+    </header>
+
+  <h2>Please fill out the contact form below to reach me</h2>
+  <!--1st name, last name, e-mail address (email), phone number (numbers) subject, message (free-form),
+  specialty fields to discuss (checkbox), preferred method of contact (radio), preferred time of contact (dropdown),
+  submit button, reset button-->
+    <form method="GET">
+      <label>Your 1st Name:
+        <input type="text" name="firstName">
+      </label>
+
+      <label>Your Last Name:
+        <input type="text" name="lastName">
+      </label>
+
+      <label for="city">Your phone number (123-456-7890 format):
+        <input type="tel" name="phone" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </label>
+
+      <label>Your email:
+        <input type="email" name="email">
+      </label>
+
+      <label>Subject:
+        <input type="text" name="subject">
+      </label>
+
+      <label>Message:
+        <textarea name="message" rows="5" cols="50">
+          I'd like to talk to you about...</textarea>
+      </label>
+
+      <fieldset class="checkbox">
+        <legend>What topics are you interested in?</legend>
+        <label>Web Development
+          <input type="checkbox" name="topic" value="programming">
+          <span class="checkmark"></span>
+        </label>
+        <label>Airplanes and Aerospace
+          <input type="checkbox" name="topic" value="airplanes">
+          <span class="checkmark"></span>
+        </label>
+        <label>Environmental Engineering
+          <input type="checkbox" name="topic" value="environment">
+          <span class="checkmark"></span>
+        </label>
+        <label>Land Development and Civil Engineering
+          <input type="checkbox" name="topic" value="civil">
+          <span class="checkmark"></span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you interested in subscribing to  weekly digest email?</legend>
+
+        <label>
+          <input type="radio" name="subscribe" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="subscribe" value="no">
+          No
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+
+  <footer>
+    <p><i class="far fa-copyright"></i> Chris Dela Pena, 2020</p>
+  </footer>
+  </body>
+</html>
