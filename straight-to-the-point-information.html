@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Straight to the Point Archery Academy</title>
+    <title>Straight to the Point Instructor and Class Info</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet-straight-to-the-point.css">
     <script src="https://kit.fontawesome.com/015d63ce65.js" crossorigin="anonymous"></script>
   </head>
@@ -21,14 +21,14 @@
       </div>
     </header>
 
-      <nav class="nav-link">
-        <a class="white" href="../cdelapena.github.io/straight-to-the-point-index.html">Home</a> |
-        <a class="white" href="../cdelapena.github.io/straight-to-the-point-index.html#about-us">About Us</a> |
-        <a class="white" href="../cdelapena.github.io/straight-to-the-point-information.html#instructors">Instructors</a> |
-        <a class="white" href="../cdelapena.github.io/straight-to-the-point-information.html#classes">Classes</a> |
-        <a class="white" href="../cdelapena.github.io/straight-to-the-point-index.html#schedule">Schedule</a> |
-        <a class="white" href=mailto:archery-education@example.com>Contact Us</a>
-      </nav>
+    <nav class="nav-link">
+      <p><a class="white" href="../cdelapena.github.io/straight-to-the-point-index.html">Home</a>  |
+      <a class="white" href="../cdelapena.github.io/straight-to-the-point-index.html#about-us">About Us</a>  |
+      <a class="white" href="../cdelapena.github.io/straight-to-the-point-information.html#instructors">Instructors</a>  |
+      <a class="white" href="../cdelapena.github.io/straight-to-the-point-information.html#classes">Classes</a>  |
+      <a class="white" href="../cdelapena.github.io/straight-to-the-point-index.html#schedule">Schedule</a>  |
+      <a class="white" href=mailto:archery-education@example.com>Contact Us</a></p>
+    </nav>
 
         <h2><a id="instructors">Our Instructors</a></h2>
         <div class="grid-container instructor-background">
@@ -168,18 +168,26 @@
           </article>
         </section>
 
-        <section>
-            <h3><a id="schedule">Our class schedule is below.</a> <a class="white" href="straight-to-the-point-information.html#classes">Click here</a>
-              for a description of classes and prices.
-              Times outside of scheduled classes are open for individual training and group events!</h3>
-            <p class="aligncenter"><img src="images/weekly-archery-schedule.png" alt="Straight to the Point weekly calendar"></p>
-        </section>
+        <!--split apart below sentences from pure h3 to h2 and h3-->
+        <h2><a id="schedule">Our class schedule is below.</a> <a class="white" href="straight-to-the-point-information.html#classes">Click here</a>
+          for a description of classes and prices.</h2>
+        <h3>Times outside of scheduled classes are open for individual training and group events!</h3>
+        <div class="grid-container">
+          <div>
+            <p class="aligncenter">
+              <!--Control max-width for accessibility so that schedule doesn't overflow screen-->
+              <img style="max-width: 100%; height: auto" src="images/weekly-archery-schedule.png" alt="Straight to the Point weekly calendar"></p>
+          </div>
+        </div>
 
         <footer>
           <div class="grid-container">
             <div class="grid-item-5">
               <p class="white">Click map below to enlarge</p>
               <a href="images/footer-map.png">
+                <!--60% value is seen as bad attribute for width by validator.w3.org.
+                If % is removed, image does not scale. My intent is for it to scale, regardless
+                if seen as bad attribute or not-->
                 <img src="images/footer-map.png" alt="map" width=60%>
               </a>
             </div>

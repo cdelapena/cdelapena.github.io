@@ -59,6 +59,10 @@ p {
 p.white {
   color: white;
 }
+/*increase size of links from 17 to 24 pixels for a11y*/
+a {
+  font-size: 24px;
+}
 a.white {
   color: white;
   text-decoration: underline;
