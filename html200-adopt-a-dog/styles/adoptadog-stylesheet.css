@@ -94,3 +94,60 @@ footer {
 a.footer {
   text-decoration: none;
 }
+form {
+  padding: 1em 10em;
+}
+label {
+  color: rgb(0, 51, 102);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight:bold;
+}
+input[type=text], select {
+  width: 65%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom:20px;
+}
+input[type=email], select {
+  width: 65%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom:20px;
+}
+input[type=number], select {
+  width: 65%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom:20px;
+}
+input[type=submit] {
+  min-width:20%;
+  width: 20%;
+  background-color: #77C425;
+  color: white;
+  padding: 14px 20px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.form-container {
+  display:flex;
+  grid-template-columns: auto auto auto;
+  justify-content: left;
+}
+.form-city {
+  max-width: 40%;
+}
